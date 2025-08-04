@@ -49,7 +49,7 @@ function App() {
     <div className="col-12 m-2 p-0">
       <div className="container text-center">
         <h2>Todo List</h2>
-        <span className="m-2">All : () Done : ()</span>
+        <span className="m-2">All : {tasks.filter((task) => task.isDone).length} Done : {tasks.length}</span>
         {/* Modal Component */}
         <button
           type="button"
